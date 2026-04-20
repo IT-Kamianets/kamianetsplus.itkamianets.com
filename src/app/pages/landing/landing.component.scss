@@ -43,6 +43,12 @@
 	padding-block: 28px 36px;
 }
 
+.media-platform__content {
+	display: grid;
+	gap: 28px;
+	margin-top: 18px;
+}
+
 .media-platform h1 {
 	max-width: 720px;
 	color: #7fc2df;
@@ -52,11 +58,10 @@
 }
 
 .media-platform__copy {
-	margin-top: 18px;
+	min-width: 0;
 }
 
 .media-platform__copy p {
-	max-width: 930px;
 	margin-top: 20px;
 	color: #70747d;
 	font-size: 15px;
@@ -66,6 +71,16 @@
 .media-platform__copy strong {
 	color: #646a73;
 	font-weight: 800;
+}
+
+.media-platform__phones {
+	margin: 0;
+}
+
+.media-platform__phones img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 .landing-kicker {
@@ -165,7 +180,6 @@ a {
 	.landing-shell {
 		padding-inline: 24px;
 	}
-
 }
 
 @media (min-width: 900px) {
@@ -180,6 +194,12 @@ a {
 
 	.media-platform__inner {
 		padding-block: 34px 48px;
+	}
+
+	.media-platform__content {
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		align-items: center;
+		gap: 42px;
 	}
 
 	.media-platform h1 {
