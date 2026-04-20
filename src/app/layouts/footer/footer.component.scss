@@ -1,0 +1,42 @@
+:host {
+	display: block;
+}
+
+.footer {
+	background: var(--c-brand-gradient);
+	color: #ffffff;
+}
+
+.footer__contact {
+	display: grid;
+	grid-template-columns: 28px minmax(0, 1fr);
+	gap: 10px;
+	align-items: start;
+	width: fit-content;
+	max-width: 100%;
+	color: inherit;
+	text-decoration: none;
+}
+
+.footer__contact + .footer__contact {
+	margin-top: 8px;
+}
+
+.footer__icon {
+	font-size: 25px;
+	line-height: 1.15;
+}
+
+.footer__description {
+	max-width: 280px;
+	color: rgba(255, 255, 255, 0.88);
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1.45;
+}
+
+@media (min-width: 1024px) {
+	address {
+		justify-self: end;
+	}
+}

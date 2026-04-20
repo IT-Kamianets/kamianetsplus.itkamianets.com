@@ -1,0 +1,53 @@
+<footer class="footer">
+	<div
+		class="mx-auto grid w-full max-w-[var(--container)] gap-10 px-4 py-8 sm:px-6 lg:grid-cols-[1fr_1.15fr] lg:items-start"
+	>
+		<a
+			class="inline-flex w-fit flex-col gap-3 text-white"
+			routerLink="/"
+			aria-label="Kamianets Media"
+		>
+			<img
+				class="h-auto w-[232px] max-w-full"
+				ngSrc="bw-fit.png"
+				alt="Kamianets Media"
+				width="519"
+				height="272"
+				priority
+			/>
+			<span class="text-sm text-white/80">© {{ yearRange }}</span>
+			<span class="footer__description">Найбільша медіакомпанія Кам'янеччинни</span>
+		</a>
+
+		<address class="not-italic text-sm font-medium leading-7 text-white">
+			<a
+				class="footer__contact"
+				href="tel:+380733909545"
+				aria-label="Подзвонити +380 73 390 95 45"
+			>
+				<span class="material-symbols-outlined footer__icon" aria-hidden="true">call</span>
+				<span>+380 73 390 95 45</span>
+			</a>
+
+			<a
+				class="footer__contact"
+				href="mailto:info@kamianets.com.ua"
+				aria-label="Написати на info@kamianets.com.ua"
+			>
+				<span class="material-symbols-outlined footer__icon" aria-hidden="true">mail</span>
+				<span>info&#64;kamianets.com.ua | kamianets&#64;ukr.net</span>
+			</a>
+
+			<div class="footer__contact">
+				<span class="material-symbols-outlined footer__icon" aria-hidden="true"
+					>location_on</span
+				>
+				<span>
+					Україна<br />
+					Кам'янець-Подільський<br />
+					32300
+				</span>
+			</div>
+		</address>
+	</div>
+</footer>

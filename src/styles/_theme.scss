@@ -1,0 +1,104 @@
+:root {
+	color-scheme: light;
+
+	/* brand / actions */
+	--c-primary: #0f96ec;
+	--c-primary-hover: #0a73cd;
+	--c-secondary: #5d0e8e;
+	--c-secondary-hover: #430c70;
+	--c-accent: #f79b20;
+	--c-brand-gradient: linear-gradient(112deg, #3f16c6 0%, #7a118f 38%, #c70d46 72%, #ef5b2a 100%);
+
+	/* surfaces */
+	--c-bg-primary: #f6f7fb;
+	--c-bg-secondary: #ffffff;
+	--c-bg-tertiary: #eef4fb;
+
+	/* content */
+	--c-text-primary: #2f3a4a;
+	--c-text-secondary: #1b2450;
+	--c-text-muted: #6f7d92;
+	--c-placeholder: #6f7d92b3;
+
+	/* borders & elevation */
+	--c-border: #dbe5f1;
+	--shadow-sm: 0 1px 2px rgba(27, 36, 80, 0.08);
+	--shadow-md: 0 10px 30px rgba(27, 36, 80, 0.14);
+
+	/* typography */
+	--ff-base: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+	--fs: 16px;
+	--letter-spacing: 0;
+
+	/* radius (default rounded) */
+	--radius: 8px;
+	--radius-card: 8px;
+	--radius-btn: 8px;
+
+	/* spacing (default comfortable) */
+	--sp-0: 0px;
+	--sp-1: 4px;
+	--sp-2: 8px;
+	--sp-3: 12px;
+	--sp-4: 16px;
+	--sp-5: 20px;
+	--sp-6: 24px;
+	--sp-7: 32px;
+	--sp-8: 40px;
+	--sp-10: 48px;
+	--sp-12: 56px;
+	--sp-16: 72px;
+	--sp-20: 96px;
+
+	/* layout */
+	--container: 1210px;
+	--gutter: 10px;
+
+	/* motion */
+	--easing: cubic-bezier(0.25, 0.8, 0.25, 1);
+	--motion-fast: 0.15s;
+	--motion: 0.25s;
+	--motion-slow: 0.4s;
+
+	/* focus */
+	--focus-ring: 0 0 0 3px rgba(15, 150, 236, 0.32);
+}
+
+/* ========= modes ========= */
+html[data-mode='dark'] {
+	color-scheme: dark;
+
+	/* brand stays same */
+	--c-primary: #2fa8f0;
+	--c-primary-hover: #64bdf3;
+	--c-secondary: #8f49d6;
+	--c-secondary-hover: #a764ea;
+	--c-accent: #ffab38;
+	--c-brand-gradient: linear-gradient(
+		112deg,
+		#1f2f92 0%,
+		#4e1a95 28%,
+		#8c117f 58%,
+		#c70d46 82%,
+		#f06a2b 100%
+	);
+
+	/* surfaces */
+	--c-bg-primary: #0f1424;
+	--c-bg-secondary: #17203a;
+	--c-bg-tertiary: #1f2c4f;
+
+	/* borders & elevation */
+	--c-border: #2a3a63;
+	--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+	--shadow-md: 0 10px 30px rgba(0, 0, 0, 0.45);
+
+	/* content */
+	--c-text-primary: #dbe7f6;
+	--c-text-secondary: #ffffff;
+	--c-text-muted: #9fb2c8;
+	--c-placeholder: #9fb2c8cc;
+
+	/* focus */
+	--focus-ring: 0 0 0 3px rgba(47, 168, 240, 0.35);
+}
